@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="author" content="Mahdi Madi"/>
+        <meta name="keywords" content="Product_Landing_Page_example,FreeCodecamp_tutorial,Mahdi_Madi, ">
+        <meta name="description" content="freeCodeCamp Product Landing Page" />
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        
+       
+        <!-- imported fonts--> 
+        <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">    
+       <!--Cool fade in animtion on scroll-->
+        <script defer src="app.js"></script>
+        <script defer src="scroll-timeline.js" type="module"></script>
+        <script defer src="nav-scrolled.js"></script>
+        <!-- defer makes the app.js runs after HTML and BODY are executed-->
+    </head>
+    <body>
+       <div class="scroll-tracker"></div>
+        <main>
+            <header class="section" id="header">
+                <img class="logo" id="header-img" src=""> <!--ADD AN IMAGE SRC-->
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link active" href="#about">Home</a></li>
+                        <li><a class="nav-link" href="#features">Features</a></li>
+                        <li><a class="nav-link" href="#solutions">Solutions</a></li>
+                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li><a class="nav-link" href="#sign_up">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="about">
+                <div class="headline hidden">
+                   <h1 class="title">Great teamwork starts with a <br><span class="title-red">digital HQ</span></h1>
+                    <h3>Akesar is a place where your tools are just one click away.</h3> 
+                    <div class="call-to-action">
+                        <button class="CTA-button"><a href="#sign_up">Get Started</a></button>
+                    </div>        
+                </div>
+               
+                <div class="bg-img">
+                    <img width="420" height="300" src="/img/VT-full-size.svg">
+                    
+                </div>
+            </section>
+            
+            <section id="features" class="hidden">
+                <div class="headline hidden">
+                    <h1 class="title">All in one place with <span class="title-red">everything</span><br>you need</h1>
+                    <h3>
+                    Akesar is the perfect tool for the digital age.<br>
+                    you can chat with your team, create documents, share files and notes, plan meetings, and manage tasks<br>
+                    all from one single account.<br>
+                    </h3>
+                </div>
+                <div class="bg-img animate-on-scroll">
+                    <img loading="lazy" width="420" height="300" src="/img/undraw_lost_online_re_upmy.svg">
+                </div>
+
+               
+            </section>
+
+            
+            
+            <section id="solutions">
+                <div class="headline hidden">
+                    <h1 class="title"><span class="title-red">Communication </span>made easy</h1>
+                    <h3>
+                        We offer everything from live video chat and screen sharing to email, Skype and Google Hangouts integration.<br>
+                        No more juggling multiple accounts or switching between apps.
+                    </h3>
+                </div>
+                <div>
+                    <iframe loading="lazy" autoplay allowfullscreen data-keepplaying frameborder="0" src="//player.vimeo.com/video/368729135?title=0&portrait=0&byline=0&autoplay=1&muted=true"></iframe>
+                </div>
+            </section>
+              
+            <section id="pricing" class="hidden">
+                <div class="headline">
+                    <h1 class="title">One app with<span class="title-red"> everything </span>you need</h1>
+                    <h3>With Akesar's unified dashboard, there's no need to switch between apps or jump from tab to tab just to keep track of all your tools.<br> 
+                        Get everything you need in one app!
+                    </h3>
+                </div>
+                
+                <div class="container">
+                    <div class="card hidden">
+                        <img class="illustration" src="/img/undraw_online_test_re_kyfx.svg" alt="Free Plan Illustration">
+                        <div class="mini-container">
+                            <h3 class="plan-title">Free</h3>
+                            <p class="order-description">The quickest and easiest way to try Akesar</p>
+                            <div class="plan-container">
+                                <div class="plan-description">
+                                    <p class="price">$0/mo</p>
+                                    <strong>forever</strong>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>    
+                            <button class="visual" href="#">GET STARTED</button>
+                        </div>
+                    </div>
+                    <div class="card hidden">
+                        <img class="illustration" src="/img/undraw_term_sheet_re_ju7s.svg" alt="Pro Plan illustration">
+                        <div class="mini-container">
+                            <h3 class="plan-title">Pro</h3>
+                            <p class="order-description">Better collaboration <br>for small teams</p>
+                            <div class="plan-container">
+                                <div class="plan-description">
+                                    <p class="price">$7.25/mo</p>
+                                    <strong>Monthly</strong>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>    
+                            <button class="visual" href="#">GET STARTED</button>
+                        </div> 
+                    </div>
+                    <div class="card hidden">
+                        <img class="illustration" src="/img/undraw_journey_re_ec5q.svg" alt="Buissness Plus plan illustration">
+                        <div class="mini-container">
+                            <h3 class="plan-title">Buissness+</h3>
+                            <p class="order-description">Scale your business,<br> keep your teams connected</p>
+                            <div class="plan-container">
+                                <div class="plan-description">
+                                    <p class="price">$12.50/mo</p>
+                                    <strong>Monthly</strong>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>    
+                            <button class="visual" href="#">GET STARTED</button>
+                         </div>    
+                    </div>
+                    <!--Final Card-->
+                    <div class="card hidden">
+                        <img class="illustration" src="/img/undraw_react_re_g3ui.svg" alt="Entreprise plan illustration">
+                        <div class="mini-container">
+                            <h3 class="plan-title">Entreprise</h3>
+                            <p class="order-description">Akesar for the most demanding enterprises</p>
+                            <div class="plan-container">
+                                <div class="plan-description">
+                                    <p class="price">$19.90/mo</p>
+                                    <strong>Monthly</strong>
+                                </div>
+                                <a href="#">Learn More</a>
+                            </div>    
+                            <button class="visual" href="#">CONTACT SALES</button>
+                         </div>    
+                    </div>
+                </div>
+                    
+                    
+            </section>
+
+            <section id="sign_up" class="hidden">
+                <div class="headline">
+                    <h1 class="title">Sign up for <span class="title-red">free</span></h1>
+                    <h3>Get started with a free account</h3>
+                    <div>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit"> 
+                            <!--its recommended to use method="post" when dealing with sensitive data-->
+                            <fieldset>
+                                <legend>Contact Details</legend>
+                                <div class="txt_field">
+                                    <input type="text"id="name"name="name"placeholder="Ophy Boamah" pattern="[a-zA-Z]{4-20}"autofocus autocomplete="on" required>
+                                    <span></span>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="email"name="email"id="email"placeholder="ob2@tutanota.com" required>
+                                    <span></span>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="txt_field">
+                                    <input type="password"name="password"id="password"placeholder="********" required pattern="[a-zA-Z]{8,30}">
+                                    <!--only upper and lowercase between 8-30 characters*/-->
+                                    <span></span>
+                                    <label for="password">Password</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="terms" name="terms" class="checkbox">
+                                    <label for="terms">I have read and agreed to the<a href="#"> <strong>terms and conditions</strong> </a></label>
+                                    <div class="sign_up_link">
+                                        <input type="submit" value="Sign Up">
+                                    </div>
+                                    <div class="sign_in_link">
+                                        <label for="sign-in">Already a member? <a href="#"><strong>Sign In</strong></a></label>
+                                    </div>
+                               </div>
+                            
+                                
+                            </fieldset>  
+                        </form>   
+                    </div>
+                </div>
+               
+            </section>
+
+            <footer class="attribution">
+                <p> A <a href="https://www.freecodecamp.com" target="_blank"><strong>FreeCodeCamp</strong></a> Project, Coded by <a href="https://linktr.ee/Mahdi_Madi" target="_blank"><strong>Mahdi Madi</strong></a></p>
+            </footer>
+    
+        </main>
+    
+    </body>
+   
+</html>
